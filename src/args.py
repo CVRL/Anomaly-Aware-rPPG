@@ -44,8 +44,8 @@ def get_input():
                         default=None,
                         help='If load_path is not None, then it will load and start training model.')
     parser.add_argument('--dataset',
-                        default='mspec',
-                        help='Dataset to train model with (mspec, nir, mask, syn_mask). [mspec]')
+                        default='ddpm',
+                        help='Dataset to train model with (ddpm, negshuffle, neguniform, negnormal). [ddpm]')
     parser.add_argument('--rerun_seeds',
                         default='../config/rerun_seeds.json',
                         help='Seed config file.')
@@ -126,8 +126,8 @@ def get_input():
                         default=0,
                         help='Split of the data (0=train, 1=val, 2=test). [0]')
     parser.add_argument('--fps',
-                        default=90,
-                        help='The framerate of the video [60]')
+                        default=30,
+                        help='The framerate of the video [30]')
     parser.add_argument('--hanning',
                         default=1,
                         help='Whether to use hanning window while overlap-adding. [1]')

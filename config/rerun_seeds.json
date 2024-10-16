@@ -1,0 +1,22 @@
+{
+  "1": {
+    "model": 3,
+    "training": 2
+  },
+  "2": {
+    "model": 4,
+    "training": 4
+  },
+  "3": {
+    "model": 5,
+    "training": 5
+  },
+  "4": {
+    "model": 6,
+    "training": 6
+  },
+  "5": {
+    "model": 7,
+    "training": 7
+  }
+}
