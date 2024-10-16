@@ -15,14 +15,13 @@ LOSS="np"
 MODEL="rpnet"
 AUGMENTATION="fig" # flipping, illumination, gaussian
 CHANNELS="rgb"      # desired channel order for input video (expects bgr input)
-FPC=136             # frames-per-clip
-STEP=68             # step between clips fed during training
+FPC=270             # frames-per-clip
+STEP=135            # step between clips fed during training
 SKIP=1              # frame rate from skipping (e.g. skip=2 would give (90/2)=45 fps)
 NUM_WORKERS=4
 NUM_EPOCHS=40
 
 cd ../src
-
 python train.py --dataset $DATASET \
                 --model_type $MODEL \
                 --augmentation $AUGMENTATION \

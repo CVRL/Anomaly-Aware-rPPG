@@ -2,6 +2,7 @@
 (Official repo for BIOSIGNALS 2023 paper)
 
 Official BIOSIGNALS 2023 Paper: [Anomaly-Aware Remote Photoplethysmography](https://www.scitepress.org/Papers/2023/117817/117817.pdf)
+
 Link to arXiv Paper: [Anomaly-Aware Remote Photoplethysmography](https://arxiv.org/abs/2303.06452)
 
 ## Preprocessing
@@ -19,7 +20,15 @@ A list of the datasets used in the paper are:
 Models can be trained by using the script, which has preset parameters which can be adjusted for the experiment:
 ```
 cd scripts
-sh train.sh 
+sh train.sh  # for normal training
+sh train_negative.sh  # for training with negative samples
+```
+
+## Testing after Model Training
+To make predictions on the testing datasets with your different models, you can use the `validate_emitter.py` script:
+```
+cd src
+python validate_emitter.py
 ```
 
 ![](assets/teaser.png)

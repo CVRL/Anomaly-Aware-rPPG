@@ -79,8 +79,8 @@ def get_input():
                         default='RGB',
                         help='Input channels (any combo of {R,G,B,N}. [RGB]')
     parser.add_argument('--dropout',
-                        default=0.2,
-                        help='Dropout used in model. [0.2]')
+                        default=0.5,
+                        help='Dropout used in model. [0.5]')
     parser.add_argument('--batch_size',
                         default=8,
                         help='Batch size for training. [8]')
