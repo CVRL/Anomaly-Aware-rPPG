@@ -31,5 +31,16 @@ cd src
 python validate_emitter.py
 ```
 
+## Feature Extraction and SVM fitting to Predict Anomalies
+All of the feature extraction and SVM fitting code is in the `testing` folder.
+See the order of processing in the `testing/README.md` file.
+In general, you can run the python scripts by running the bash scripts in the `testing/scripts` folder.
+For example:
+```
+cd testing/scripts
+## Edit the predict.sh file to specify the model and dataset you want to use
+sh predict.sh
+```
+
 ![](assets/teaser.png)
 
